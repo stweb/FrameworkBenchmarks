@@ -28,32 +28,15 @@ defmodule Hello.PageController do
     render conn, "fortunes.html", fortunes: Enum.sort(fortunes, fn f1, f2 -> f1.message < f2.message end)
   end
 
-<<<<<<< HEAD
-  def updates(conn, _params) do
-    q = try do
-      case String.to_integer(_params["queries"]) do
-        x when x < 1    -> 1
-        x when x > 500  -> 500
-        x               -> x
-      end
-    rescue
-      ArgumentError -> 1
-    end
-    json conn, Enum.map(1..q, fn _ ->
-=======
   def updates(conn, params) do
     q = queries_n(params)
 
     data = Enum.map(1..q, fn _ ->
->>>>>>> 15ca7b7f42a3558573ce78f8d27d2a8a1f7dddc0
       w = Repo.get(World, :random.uniform(10000))
       changeset = World.changeset(w, %{randomnumber: :random.uniform(10000)})
       Repo.update(changeset)
       w end)
-<<<<<<< HEAD
-=======
     render conn, "queries.json", data: data
->>>>>>> 15ca7b7f42a3558573ce78f8d27d2a8a1f7dddc0
   end
 
   def plaintext(conn, _params) do
