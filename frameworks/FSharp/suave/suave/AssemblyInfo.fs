@@ -3,12 +3,12 @@
 open System.Reflection
 open System.Runtime.CompilerServices
 
-[<assembly:AssemblyTitle("suave")>]
+[<assembly:AssemblyTitle("suave benchmark")>]
 [<assembly:AssemblyDescription("")>]
 [<assembly:AssemblyConfiguration("")>]
 [<assembly:AssemblyCompany("")>]
 [<assembly:AssemblyProduct("")>]
-[<assembly:AssemblyCopyright("stefan")>]
+[<assembly:AssemblyCopyright("")>]
 [<assembly:AssemblyTrademark("")>]
 [<assembly:AssemblyVersion("1.0.0.0")>]
 ()

@@ -84,3 +84,4 @@ nimcache
 .crystal
 *.out
 frameworks/FSharp/suave/suave/obj
+frameworks/FSharp/suave/packages/
