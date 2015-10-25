@@ -1,0 +1,26 @@
+{
+  "framework": "suave",
+  "tests": [{
+    "default": {
+      "setup_file": "setup",
+      "json_url": "/json",
+      "db_url": "/db",
+      "query_url": "/queries?queries=",
+      "fortune_url": "/fortunes/",
+      "port": 8083,
+      "approach": "Realistic",
+      "classification": "Micro",
+      "database": "MySQL",
+      "framework": "suave.io",
+      "language": "F#",
+      "orm": "Raw",
+      "platform": "mono",
+      "webserver": "suave",
+      "os": "Linux",
+      "database_os": "Linux",
+      "display_name": "suave",
+      "notes": "",
+      "versus": ""
+    }
+  }]
+}
