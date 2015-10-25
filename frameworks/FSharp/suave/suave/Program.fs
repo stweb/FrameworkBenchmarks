@@ -204,11 +204,12 @@ let app =
 // See the 'F# Tutorial' project for more help.
 [<EntryPoint>]
 let main argv = 
-    let port = 8000
+    let port = 8080
     let serverConfig =
         { Web.defaultConfig with homeFolder = Some __SOURCE_DIRECTORY__
-                                 logger = Logging.Loggers.saneDefaultsFor Logging.LogLevel.Verbose
-                                 bindings = [ Types.HttpBinding.mk' Types.HTTP "127.0.0.1" port ] }
+                                 logger = Logging.Loggers.saneDefaultsFor Logging.LogLevel.Warn
+                                 maxOps = 512
+                                 bindings = [ Types.HttpBinding.mk' Types.HTTP "192.168.0.116" port ] }
 
 
 
