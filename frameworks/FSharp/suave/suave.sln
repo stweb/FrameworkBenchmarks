@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{363AAD
 		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "suave", "suave\suave.fsproj", "{496271FA-D87C-4A71-90C1-76710A0B1884}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SuaveBench", "suave\SuaveBench.fsproj", "{496271FA-D87C-4A71-90C1-76710A0B1884}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
