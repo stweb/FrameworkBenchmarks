@@ -11,6 +11,7 @@
     <AssemblyName>LibeventHost</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nancy">
-      <HintPath>..\..\lib\Nancy.0.23.0\lib\net40\Nancy.dll</HintPath>
-    </Reference>
     <Reference Include="Nancy.Hosting.Event2">
       <HintPath>..\..\lib\Nancy.Hosting.Event2.dll</HintPath>
     </Reference>
@@ -45,19 +43,23 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Nancy">
+      <HintPath>..\..\lib\Nancy.1.4.0\lib\net40\Nancy.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\NancyModules\NancyModules.csproj">
-      <Project>{175c0589-e4cd-479e-ba24-bba54ca17dc8}</Project>
+      <Project>{175C0589-E4CD-479E-BA24-BBA54CA17DC8}</Project>
       <Name>NancyModules</Name>
     </ProjectReference>
   </ItemGroup>
